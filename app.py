@@ -69,7 +69,7 @@ def extract_text_from_pdf(uploaded_file):
 @st.cache_data(show_spinner="Gemini is analyzing the document...")
 def analyze_financial_text_with_gemini(_text_chunk):
     """
-    Uses Google Gemini 1.5 Flash to analyze financial text.
+    Uses Google Gemini 2.0 Flash to analyze financial text.
     The _text_chunk is used for caching; the full text is passed in the prompt.
     """
     # The model name for Gemini 1.5 Flash
